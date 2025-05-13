@@ -27,10 +27,45 @@ card {
   .copyright {
     color: var(--Color-White-100, #fff);
     text-align: right;
+
     font-feature-settings: "liga" off, "clig" off;
     @apply font-sans text-[20px] not-italic font-normal leading-[1.25] py-4;
   }
+  .partit {
+    color: var(--Color-Green-100, #74c69d);
+    text-align: center;
+    font-feature-settings: "liga" off, "clig" off;
+    font-style: normal;
+    @apply text-lg pt-4 tracking-[5px] uppercase font-bold;
+  }
+  .parsub {
+    color: var(--Text_Black, #000);
 
+    font-feature-settings: "liga" off, "clig" off;
+
+    @apply font-bold text-xl text-center font-serif py-4;
+  }
+  .parte {
+    @apply text-center text-[20px] text-black px-[9%];
+  }
+  .btn {
+    @apply bg-white w-[170px] h-[48px] mb-6 hover:shadow-lg hover:text-black text-black text-[20px] rounded-[5px];
+  }
+  .wbtn {
+    @apply bg-black w-[170px] h-[48px] mb-6 hover:shadow-lg hover:text-white text-white text-[20px] font-normal rounded-[5px] mt-4;
+  }
+  .mati {
+    font-family: "Crimson Text";
+    font-style: normal;
+    @apply text-[24px] font-bold leading-[1.25] text-left;
+  }
+  .mate {
+    @apply font-normal text-[15px] leading-[1.25] text-left ;
+  }
+
+  .main {
+    @apply flex flex-col items-center justify-center text-left gap-y-4;
+  }
   .card {
     @apply bg-white shadow-lg p-6 w-1/3 h-5;
   }
