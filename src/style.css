@@ -4,10 +4,34 @@
 @theme {
   --color-primary: #ffa3f3;
   --font-main: "Tuffy";
-  --color-back: #74C69D;
+  --color-back: #74c69d;
   --font-welcome: "Work Sans", sans-serif;
   --font-loremh: "Crimson text", serif;
 }
 card {
   @apply bg-white shadow-lg p-6;
+}
+@layer components {
+  .welcome {
+    color: var(--Text_White, #fff);
+    font-feature-settings: "liga" off, "clig" off;
+    font-family: "Work Sans";
+    font-style: normal;
+    @apply text-base uppercase leading-[1.25] tracking-[5px] font-bold py-4;
+  }
+  .h1 {
+    color: var(--Text_White, #fff);
+    font-feature-settings: "liga" off, "clig" off;
+    @apply text-white font-bold font-loremh text-3xl;
+  }
+  .copyright {
+    color: var(--Color-White-100, #fff);
+    text-align: right;
+    font-feature-settings: "liga" off, "clig" off;
+    @apply font-sans text-[20px] not-italic font-normal leading-[1.25] py-4;
+  }
+
+  .card {
+    @apply bg-white shadow-lg p-6 w-1/3 h-5;
+  }
 }
