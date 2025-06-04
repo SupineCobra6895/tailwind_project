@@ -276,6 +276,9 @@
   .pb-6 {
     padding-bottom: calc(var(--spacing) * 6);
   }
+  .pl-\(--tenth\) {
+    padding-left: var(--tenth);
+  }
   .text-center {
     text-align: center;
   }
